@@ -18,7 +18,7 @@
     --border: #30363d;
 
     --green: #7ee787;
-    --purple: #c084fc;
+    --purple: #a855f7;
     --blue: #58a6ff;
 }
 
@@ -223,6 +223,47 @@ nav {
 
     color: #8b949e;
     font-size: 1.1rem;
+}
+
+.availability {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-top: 25px;
+
+    color: var(--green);
+
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.status-dot {
+    width: 8px;
+    height: 8px;
+
+    border-radius: 50%;
+
+    background: var(--green);
+
+    box-shadow:
+        0 0 8px rgba(126, 231, 135, 0.7);
+
+    animation: statusPulse 2s ease-in-out infinite;
+}
+
+@keyframes statusPulse {
+    0%,
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.45;
+        transform: scale(0.85);
+    }
 }
 
 .hero-buttons {
