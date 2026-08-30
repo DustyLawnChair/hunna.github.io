@@ -8,13 +8,39 @@
     box-sizing: border-box;
 }
 
+:root {
+    --bg: #0d1117;
+    --bg-secondary: #161b22;
+
+    --text: #e6edf3;
+    --text-muted: #8b949e;
+
+    --border: #30363d;
+
+    --green: #7ee787;
+    --purple: #c084fc;
+    --blue: #58a6ff;
+}
+
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    background: #0d1117;
-    color: #e6edf3;
+    background:
+        radial-gradient(
+            circle at 15% 20%,
+            rgba(126, 231, 135, 0.04),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 85% 75%,
+            rgba(192, 132, 252, 0.04),
+            transparent 30%
+        ),
+        var(--bg);
+
+    color: var(--text);
 
     font-family:
         "Courier New",
