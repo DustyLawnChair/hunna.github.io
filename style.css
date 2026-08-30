@@ -316,17 +316,28 @@ section p {
 }
 
 .project-card {
-    border: 1px solid #30363d;
+    position: relative;
+
+    border: 1px solid var(--border);
+
+    background: rgba(22, 27, 34, 0.35);
 
     padding: 30px;
 
-    transition: 0.2s ease;
+    transition:
+        border-color 0.25s ease,
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
 }
 
 .project-card:hover {
-    border-color: #7ee787;
+    border-color: var(--green);
 
-    transform: translateY(-3px);
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.25),
+        0 0 20px rgba(126, 231, 135, 0.04);
 }
 
 .project-card h3 {
