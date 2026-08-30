@@ -141,8 +141,22 @@ nav {
    ======================================== */
 
 .terminal-line {
-    color: #7ee787;
+    color: var(--green);
     margin-bottom: 15px;
+}
+
+.terminal-line::after {
+    content: "▋";
+
+    margin-left: 6px;
+
+    animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
 }
 
 
