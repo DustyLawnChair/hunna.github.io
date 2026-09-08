@@ -190,194 +190,197 @@
         </section>
 
 
-        <!-- PROJECTS -->
-        <section id="projects">
+<!-- PROJECTS -->
+<section id="projects">
 
-            <p class="terminal-line">$ ls ./projects</p>
+    <p class="terminal-line">$ ls ./projects</p>
 
-            <h2>// Projects</h2>
+    <h2>// Projects</h2>
 
+    <div class="projects-wrapper">
+        
+        <div class="projects-container">
 
-            <div class="projects-container">
+        <!-- PLAYTRACKER -->
+        <article class="project-card">
 
+            <h3>PlayTracker</h3>
 
-                <!-- PLAYTRACKER -->
-                <article class="project-card">
-                
-                    <h3>PlayTracker</h3>
-                
-                    <p>
-                        A full-stack NBA player statistics application built with
-                        Java and Spring Boot. The application provides a REST API
-                        for searching players, teams, and individual player statistics.
-                    </p>
-                
-                    <p>
-                        Implemented a layered architecture separating REST controllers,
-                        business logic, and data access. Player records can be created,
-                        updated, searched, soft-deleted, and restored through the API.
-                    </p>
-                
-                    <p>
-                        Built around a relational database with a dedicated DAO layer,
-                        service layer, exception handling, and frontend pages for
-                        interacting with player and statistical data.
-                    </p>
-                
-                    <p class="technologies">
-                        Java · Spring Boot · REST API · SQL · MariaDB ·
-                        JavaScript · HTML · CSS · DAO · OOP
-                    </p>
-                
-                    <div class="project-links">
-                
-                        <a href="https://github.com/DustyLawnChair/HunnasProjects"
-                           target="_blank"
-                           rel="noopener noreferrer">
-                            GitHub →
-                        </a>
-                
-                    </div>
-                
-                </article>
+            <p>
+                A full-stack NBA player statistics application built with
+                Java and Spring Boot. The application provides a REST API
+                for searching players, teams, and individual player statistics.
+            </p>
 
-                <!-- FOOTBALL ANALYTICS ENGINE -->
-                <article class="project-card">
+            <p>
+                Implemented a layered architecture separating REST controllers,
+                business logic, and data access. Player records can be created,
+                updated, searched, soft-deleted, and restored through the API.
+            </p>
 
-                    <h3>Football Analytics Engine</h3>
+            <p>
+                Built around a relational database with a dedicated DAO layer,
+                service layer, exception handling, and frontend pages for
+                interacting with player and statistical data.
+            </p>
 
-                    <p>
-                        A Python-based football analytics pipeline built using
-                        event-level StatsBomb data from the 2015/16 Premier League.
-                        The project analyzes shot volume, expected goals (xG),
-                        finishing efficiency, and overall team performance.
-                    </p>
+            <p class="technologies">
+                Java | Spring Boot | REST API | SQL | MariaDB |
+                JavaScript | HTML | CSS | DAO | OOP
+            </p>
 
-                    <p>
-                        Processed event data across all 380 league matches using
-                        Pandas, calculated team-level attacking metrics, and
-                        compared expected goals against actual results to identify
-                        trends in shot quality and finishing.
-                    </p>
+            <div class="project-links">
 
-                    <p>
-                        Built an interactive Streamlit dashboard for exploring team
-                        performance, league standings, goals scored, and expected
-                        goals alongside the underlying analytical dataset.
-                    </p>
+                <a href="https://github.com/DustyLawnChair/HunnasProjects"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    GitHub →
+                </a>
 
-                    <p class="technologies">
-                        Python · Pandas · StatsBomb · Streamlit · Matplotlib ·
-                        Data Analysis · Data Visualization
-                    </p>
+            </div>
+        
+        </div>
 
-                    <div class="project-links">
-
-                        <a href="https://github.com/DustyLawnChair/football-analytics-engine"
-                        target="_blank"
-                        rel="noopener noreferrer">
-                            GitHub →
-                        </a>
-
-                    </div>
-
-                </article>
+        </article>
 
 
-                <!-- SUDOKU SOLVER -->
-<article class="project-card">
+        <!-- FOOTBALL ANALYTICS ENGINE -->
+        <article class="project-card">
 
-    <h3>Sudoku Solver</h3>
+            <h3>Football Analytics Engine</h3>
 
-    <p>
-        An interactive Sudoku solver and puzzle generator built with
-        Python and Tkinter. The application uses backtracking with
-        Minimum Remaining Values (MRV) optimization to efficiently
-        solve Sudoku puzzles.
-    </p>
+            <p>
+                A Python-based football analytics pipeline built using
+                event-level StatsBomb data from the 2015/16 Premier League.
+                The project analyzes shot volume, expected goals (xG),
+                finishing efficiency, and overall team performance.
+            </p>
 
-    <p>
-        Implemented puzzle validation, unique-solution verification,
-        randomized puzzle generation, and difficulty-based generation.
-        The solver also tracks search attempts, backtracks, and execution
-        time to analyze solving performance.
-    </p>
+            <p>
+                Processed event data across all 380 league matches using
+                Pandas, calculated team-level attacking metrics, and
+                compared expected goals against actual results to identify
+                trends in shot quality and finishing.
+            </p>
 
-    <p>
-        Built an interactive desktop interface with editable Sudoku grids,
-        difficulty selection, real-time input validation, invalid-move
-        feedback, and visual distinction between puzzle clues and
-        solver-generated values.
-    </p>
+            <p>
+                Built an interactive Streamlit dashboard for exploring team
+                performance, league standings, goals scored, and expected
+                goals alongside the underlying analytical dataset.
+            </p>
 
-    <p class="technologies">
-        Python, Tkinter, Backtracking, MRV, Algorithms,
-        Unit Testing, GUI
-    </p>
+            <p class="technologies">
+                Python | Pandas | StatsBomb | Streamlit | Matplotlib |
+                Data Analysis | Data Visualization
+            </p>
 
-    <div class="project-links">
+            <div class="project-links">
 
-        <a href="https://github.com/DustyLawnChair/sudoku-solver"
-           target="_blank"
-           rel="noopener noreferrer">
-            GitHub →
-        </a>
-
-    </div>
-
-</article>
-
-
-                <!-- FISH'N WEATHER -->
-<article class="project-card">
-
-    <h3>Fish'n Weather</h3>
-
-    <p>
-        A full-stack weather and fishing application built with
-        Java and Spring Boot. The application combines weather,
-        astronomical, and mapping data to provide fishing
-        conditions for a selected location.
-    </p>
-
-    <p>
-        Implemented interactive maps with Leaflet, integrated
-        external APIs for weather and location data, and
-        developed a fishing condition rating based on environmental
-        factors.
-    </p>
-
-    <p>
-        Deployed as a containerized Spring Boot application using
-        Docker and hosted on Render.
-    </p>
-
-    <p class="technologies">
-        Java · Spring Boot · JavaScript · Thymeleaf ·
-        Leaflet · HTML · CSS · REST APIs · Docker
-    </p>
-
-    <div class="project-links">
-
-        <a href="https://github.com/DustyLawnChair/Fishing-Weather-App"
-           target="_blank"
-           rel="noopener noreferrer">
-            GitHub →
-        </a>
-
-        <a href="https://fishing-weather-app.onrender.com"
-           target="_blank"
-           rel="noopener noreferrer">
-            Live Demo →
-        </a>
-
-    </div>
-
-</article>
+                <a href="https://github.com/DustyLawnChair/football-analytics-engine"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    GitHub →
+                </a>
 
             </div>
 
-        </section>
+        </article>
+
+
+        <!-- SUDOKU SOLVER -->
+        <article class="project-card">
+
+            <h3>Sudoku Solver</h3>
+
+            <p>
+                An interactive Sudoku solver and puzzle generator built with
+                Python and Tkinter. The application uses backtracking with
+                Minimum Remaining Values (MRV) optimization to efficiently
+                solve Sudoku puzzles.
+            </p>
+
+            <p>
+                Implemented puzzle validation, unique-solution verification,
+                randomized puzzle generation, and difficulty-based generation.
+                The solver also tracks search attempts, backtracks, and execution
+                time to analyze solving performance.
+            </p>
+
+            <p>
+                Built an interactive desktop interface with editable Sudoku grids,
+                difficulty selection, real-time input validation, invalid-move
+                feedback, and visual distinction between puzzle clues and
+                solver-generated values.
+            </p>
+
+            <p class="technologies">
+                Python | Tkinter | Backtracking | MRV | Algorithms |
+                Unit Testing | GUI
+            </p>
+
+            <div class="project-links">
+
+                <a href="https://github.com/DustyLawnChair/sudoku-solver"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    GitHub →
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- FISH'N WEATHER -->
+        <article class="project-card">
+
+            <h3>Fish'n Weather</h3>
+
+            <p>
+                A full-stack weather and fishing application built with
+                Java and Spring Boot. The application combines weather,
+                astronomical, and mapping data to provide fishing
+                conditions for a selected location.
+            </p>
+
+            <p>
+                Implemented interactive maps with Leaflet, integrated
+                external APIs for weather and location data, and
+                developed a fishing condition rating based on environmental
+                factors.
+            </p>
+
+            <p>
+                Deployed as a containerized Spring Boot application using
+                Docker and hosted on Render.
+            </p>
+
+            <p class="technologies">
+                Java | Spring Boot | JavaScript | Thymeleaf |
+                Leaflet | HTML | CSS | REST APIs | Docker
+            </p>
+
+            <div class="project-links">
+
+                <a href="https://github.com/DustyLawnChair/Fishing-Weather-App"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    GitHub →
+                </a>
+
+                <a href="https://fishing-weather-app.onrender.com"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Live Demo →
+                </a>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
 
 
         <!-- SKILLS -->
@@ -557,6 +560,68 @@
         <p>Built from scratch.</p>
 
     </footer>
+
+    <script>
+    const projectsContainer =
+        document.querySelector(".projects-container");
+
+    const projectCards =
+        document.querySelectorAll(".project-card");
+
+    const previousButton =
+        document.getElementById("projects-prev");
+
+    const nextButton =
+        document.getElementById("projects-next");
+
+    const indicator =
+        document.getElementById("projects-indicator");
+
+    let currentProject = 0;
+
+    function getProjectsPerView() {
+        return window.innerWidth <= 700 ? 1 : 3;
+    }
+
+    function updateCarousel() {
+        const projectsPerView = getProjectsPerView();
+        const maxProject =
+            projectCards.length - projectsPerView;
+
+        if (currentProject > maxProject) {
+            currentProject = maxProject;
+        }
+
+        if (currentProject < 0) {
+            currentProject = 0;
+        }
+
+        const cardWidth =
+            projectCards[0].offsetWidth;
+
+        const gap = 25;
+
+        projectsContainer.scrollTo({
+            left: currentProject * (cardWidth + gap),
+            behavior: "smooth"
+        });
+
+        indicator.textContent =
+            `${String(currentProject + 1).padStart(2, "0")} / 04`;
+    }
+
+    nextButton.addEventListener("click", () => {
+        currentProject++;
+        updateCarousel();
+    });
+
+    previousButton.addEventListener("click", () => {
+        currentProject--;
+        updateCarousel();
+    });
+
+    window.addEventListener("resize", updateCarousel);
+</script>
 
 </body>
 </html>
