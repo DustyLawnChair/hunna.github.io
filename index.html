@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,23 +12,31 @@
     <link rel="stylesheet" href="style.css">
 
     <link rel="icon" type="image/png" href="favicon.png">
+
 </head>
+
 
 <body>
 
     <header>
+
         <nav>
+
             <a href="/" class="logo">hunna.dev</a>
 
             <div class="nav-links">
+
                 <a href="#about">// about</a>
                 <a href="#experience">// experience</a>
                 <a href="#projects">// projects</a>
                 <a href="#skills">// skills</a>
                 <a href="#education">// education</a>
                 <a href="#contact">// contact</a>
+
             </div>
+
         </nav>
+
     </header>
 
 
@@ -44,12 +54,12 @@
             <p class="intro">
                 I like building things, breaking them in the process, and figuring out why they broke.
             </p>
-            
+
             <p class="availability">
                 <span class="status-dot"></span>
                 Open to opportunities
             </p>
-            
+
             <div class="hero-buttons">
 
                 <a href="#projects">
@@ -108,11 +118,13 @@
                 <div class="experience-header">
 
                     <div>
+
                         <h3>Lube Technician</h3>
 
                         <p class="company">
                             Subaru of Little Rock
                         </p>
+
                     </div>
 
                     <span>
@@ -120,6 +132,7 @@
                     </span>
 
                 </div>
+
 
                 <ul>
 
@@ -151,11 +164,13 @@
                 <div class="experience-header">
 
                     <div>
+
                         <h3>Full-Stack Development Bootcamp</h3>
 
                         <p class="company">
                             Arkansas Coding Academy
                         </p>
+
                     </div>
 
                     <span>
@@ -163,6 +178,7 @@
                     </span>
 
                 </div>
+
 
                 <ul>
 
@@ -190,197 +206,224 @@
         </section>
 
 
-<!-- PROJECTS -->
-<section id="projects">
+        <!-- PROJECTS -->
+        <section id="projects">
 
-    <p class="terminal-line">$ ls ./projects</p>
+            <p class="terminal-line">$ ls ./projects</p>
 
-    <h2>// Projects</h2>
+            <h2>// Projects</h2>
 
-    <div class="projects-wrapper">
-        
-        <div class="projects-container">
+            <div class="projects-wrapper">
 
-        <!-- PLAYTRACKER -->
-        <article class="project-card">
+                <div class="projects-container">
 
-            <h3>PlayTracker</h3>
 
-            <p>
-                A full-stack NBA player statistics application built with
-                Java and Spring Boot. The application provides a REST API
-                for searching players, teams, and individual player statistics.
-            </p>
+                    <!-- PLAYTRACKER -->
+                    <article class="project-card">
 
-            <p>
-                Implemented a layered architecture separating REST controllers,
-                business logic, and data access. Player records can be created,
-                updated, searched, soft-deleted, and restored through the API.
-            </p>
+                        <h3>PlayTracker</h3>
 
-            <p>
-                Built around a relational database with a dedicated DAO layer,
-                service layer, exception handling, and frontend pages for
-                interacting with player and statistical data.
-            </p>
+                        <p>
+                            A full-stack NBA player statistics application built with
+                            Java and Spring Boot. The application provides a REST API
+                            for searching players, teams, and individual player statistics.
+                        </p>
 
-            <p class="technologies">
-                Java | Spring Boot | REST API | SQL | MariaDB |
-                JavaScript | HTML | CSS | DAO | OOP
-            </p>
+                        <p>
+                            Implemented a layered architecture separating REST controllers,
+                            business logic, and data access. Player records can be created,
+                            updated, searched, soft-deleted, and restored through the API.
+                        </p>
 
-            <div class="project-links">
+                        <p>
+                            Built around a relational database with a dedicated DAO layer,
+                            service layer, exception handling, and frontend pages for
+                            interacting with player and statistical data.
+                        </p>
 
-                <a href="https://github.com/DustyLawnChair/HunnasProjects"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    GitHub →
-                </a>
+                        <p class="technologies">
+                            Java | Spring Boot | REST API | SQL | MariaDB |
+                            JavaScript | HTML | CSS | DAO | OOP
+                        </p>
+
+                        <div class="project-links">
+
+                            <a href="https://github.com/DustyLawnChair/HunnasProjects"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                GitHub →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- FOOTBALL ANALYTICS ENGINE -->
+                    <article class="project-card">
+
+                        <h3>Football Analytics Engine</h3>
+
+                        <p>
+                            A Python-based football analytics pipeline built using
+                            event-level StatsBomb data from the 2015/16 Premier League.
+                            The project analyzes shot volume, expected goals (xG),
+                            finishing efficiency, and overall team performance.
+                        </p>
+
+                        <p>
+                            Processed event data across all 380 league matches using
+                            Pandas, calculated team-level attacking metrics, and
+                            compared expected goals against actual results to identify
+                            trends in shot quality and finishing.
+                        </p>
+
+                        <p>
+                            Built an interactive Streamlit dashboard for exploring team
+                            performance, league standings, goals scored, and expected
+                            goals alongside the underlying analytical dataset.
+                        </p>
+
+                        <p class="technologies">
+                            Python | Pandas | StatsBomb | Streamlit | Matplotlib |
+                            Data Analysis | Data Visualization
+                        </p>
+
+                        <div class="project-links">
+
+                            <a href="https://github.com/DustyLawnChair/football-analytics-engine"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                GitHub →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- SUDOKU SOLVER -->
+                    <article class="project-card">
+
+                        <h3>Sudoku Solver</h3>
+
+                        <p>
+                            An interactive Sudoku solver and puzzle generator built with
+                            Python and Tkinter. The application uses backtracking with
+                            Minimum Remaining Values (MRV) optimization to efficiently
+                            solve Sudoku puzzles.
+                        </p>
+
+                        <p>
+                            Implemented puzzle validation, unique-solution verification,
+                            randomized puzzle generation, and difficulty-based generation.
+                            The solver also tracks search attempts, backtracks, and execution
+                            time to analyze solving performance.
+                        </p>
+
+                        <p>
+                            Built an interactive desktop interface with editable Sudoku grids,
+                            difficulty selection, real-time input validation, invalid-move
+                            feedback, and visual distinction between puzzle clues and
+                            solver-generated values.
+                        </p>
+
+                        <p class="technologies">
+                            Python | Tkinter | Backtracking | MRV | Algorithms |
+                            Unit Testing | GUI
+                        </p>
+
+                        <div class="project-links">
+
+                            <a href="https://github.com/DustyLawnChair/sudoku-solver"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                GitHub →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- FISH'N WEATHER -->
+                    <article class="project-card">
+
+                        <h3>Fish'n Weather</h3>
+
+                        <p>
+                            A full-stack weather and fishing application built with
+                            Java and Spring Boot. The application combines weather,
+                            astronomical, and mapping data to provide fishing
+                            conditions for a selected location.
+                        </p>
+
+                        <p>
+                            Implemented interactive maps with Leaflet, integrated
+                            external APIs for weather and location data, and
+                            developed a fishing condition rating based on environmental
+                            factors.
+                        </p>
+
+                        <p>
+                            Deployed as a containerized Spring Boot application using
+                            Docker and hosted on Render.
+                        </p>
+
+                        <p class="technologies">
+                            Java | Spring Boot | JavaScript | Thymeleaf |
+                            Leaflet | HTML | CSS | REST APIs | Docker
+                        </p>
+
+                        <div class="project-links">
+
+                            <a href="https://github.com/DustyLawnChair/Fishing-Weather-App"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                GitHub →
+                            </a>
+
+                            <a href="https://fishing-weather-app.onrender.com"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                Live Demo →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <!-- PROJECT CAROUSEL CONTROLS -->
+                <div class="carousel-controls">
+
+                    <button
+                        class="carousel-button"
+                        id="projects-prev"
+                        aria-label="Previous projects">
+                        ←
+                    </button>
+
+                    <span
+                        class="carousel-indicator"
+                        id="projects-indicator">
+                        01 - 03 / 04
+                    </span>
+
+                    <button
+                        class="carousel-button"
+                        id="projects-next"
+                        aria-label="Next projects">
+                        →
+                    </button>
+
+                </div>
 
             </div>
-        
-        </div>
 
-        </article>
-
-
-        <!-- FOOTBALL ANALYTICS ENGINE -->
-        <article class="project-card">
-
-            <h3>Football Analytics Engine</h3>
-
-            <p>
-                A Python-based football analytics pipeline built using
-                event-level StatsBomb data from the 2015/16 Premier League.
-                The project analyzes shot volume, expected goals (xG),
-                finishing efficiency, and overall team performance.
-            </p>
-
-            <p>
-                Processed event data across all 380 league matches using
-                Pandas, calculated team-level attacking metrics, and
-                compared expected goals against actual results to identify
-                trends in shot quality and finishing.
-            </p>
-
-            <p>
-                Built an interactive Streamlit dashboard for exploring team
-                performance, league standings, goals scored, and expected
-                goals alongside the underlying analytical dataset.
-            </p>
-
-            <p class="technologies">
-                Python | Pandas | StatsBomb | Streamlit | Matplotlib |
-                Data Analysis | Data Visualization
-            </p>
-
-            <div class="project-links">
-
-                <a href="https://github.com/DustyLawnChair/football-analytics-engine"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    GitHub →
-                </a>
-
-            </div>
-
-        </article>
-
-
-        <!-- SUDOKU SOLVER -->
-        <article class="project-card">
-
-            <h3>Sudoku Solver</h3>
-
-            <p>
-                An interactive Sudoku solver and puzzle generator built with
-                Python and Tkinter. The application uses backtracking with
-                Minimum Remaining Values (MRV) optimization to efficiently
-                solve Sudoku puzzles.
-            </p>
-
-            <p>
-                Implemented puzzle validation, unique-solution verification,
-                randomized puzzle generation, and difficulty-based generation.
-                The solver also tracks search attempts, backtracks, and execution
-                time to analyze solving performance.
-            </p>
-
-            <p>
-                Built an interactive desktop interface with editable Sudoku grids,
-                difficulty selection, real-time input validation, invalid-move
-                feedback, and visual distinction between puzzle clues and
-                solver-generated values.
-            </p>
-
-            <p class="technologies">
-                Python | Tkinter | Backtracking | MRV | Algorithms |
-                Unit Testing | GUI
-            </p>
-
-            <div class="project-links">
-
-                <a href="https://github.com/DustyLawnChair/sudoku-solver"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    GitHub →
-                </a>
-
-            </div>
-
-        </article>
-
-
-        <!-- FISH'N WEATHER -->
-        <article class="project-card">
-
-            <h3>Fish'n Weather</h3>
-
-            <p>
-                A full-stack weather and fishing application built with
-                Java and Spring Boot. The application combines weather,
-                astronomical, and mapping data to provide fishing
-                conditions for a selected location.
-            </p>
-
-            <p>
-                Implemented interactive maps with Leaflet, integrated
-                external APIs for weather and location data, and
-                developed a fishing condition rating based on environmental
-                factors.
-            </p>
-
-            <p>
-                Deployed as a containerized Spring Boot application using
-                Docker and hosted on Render.
-            </p>
-
-            <p class="technologies">
-                Java | Spring Boot | JavaScript | Thymeleaf |
-                Leaflet | HTML | CSS | REST APIs | Docker
-            </p>
-
-            <div class="project-links">
-
-                <a href="https://github.com/DustyLawnChair/Fishing-Weather-App"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    GitHub →
-                </a>
-
-                <a href="https://fishing-weather-app.onrender.com"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    Live Demo →
-                </a>
-
-            </div>
-
-        </article>
-
-    </div>
-
-</section>
+        </section>
 
 
         <!-- SKILLS -->
@@ -394,59 +437,71 @@
             <div class="skills-container">
 
                 <div>
+
                     <h3>Languages</h3>
 
                     <p>
                         Java · Python · SQL · JavaScript ·
                         HTML/CSS · Linux/Unix
                     </p>
+
                 </div>
 
 
                 <div>
+
                     <h3>Frameworks</h3>
 
                     <p>
                         Spring Boot · Angular · React ·
                         Django · Flask
                     </p>
+
                 </div>
 
 
                 <div>
+
                     <h3>Databases</h3>
 
                     <p>
                         MariaDB · Oracle
                     </p>
+
                 </div>
 
 
                 <div>
+
                     <h3>Developer Tools</h3>
 
                     <p>
                         Git · GitHub · VS Code · Visual Studio ·
                         PyCharm · IntelliJ · Eclipse
                     </p>
+
                 </div>
 
 
                 <div>
+
                     <h3>Libraries</h3>
 
                     <p>
                         pandas · NumPy · Matplotlib · Love2D · Hibernate
                     </p>
+
                 </div>
 
 
                 <div>
+
                     <h3>Currently Learning</h3>
 
                     <p>
                         Web Development · Software Engineering
                     </p>
+
                 </div>
 
             </div>
@@ -456,10 +511,11 @@
 
         <!-- EDUCATION -->
         <section id="education">
-            
+
             <p class="terminal-line">$ cat education.txt</p>
 
             <h2>// Education</h2>
+
 
             <article class="education-item">
 
@@ -561,67 +617,139 @@
 
     </footer>
 
+
+    <!-- PROJECT CAROUSEL -->
     <script>
-    const projectsContainer =
-        document.querySelector(".projects-container");
 
-    const projectCards =
-        document.querySelectorAll(".project-card");
+        const projectsContainer =
+            document.querySelector(".projects-container");
 
-    const previousButton =
-        document.getElementById("projects-prev");
+        const projectCards =
+            document.querySelectorAll(".project-card");
 
-    const nextButton =
-        document.getElementById("projects-next");
+        const previousButton =
+            document.getElementById("projects-prev");
 
-    const indicator =
-        document.getElementById("projects-indicator");
+        const nextButton =
+            document.getElementById("projects-next");
 
-    let currentProject = 0;
+        const indicator =
+            document.getElementById("projects-indicator");
 
-    function getProjectsPerView() {
-        return window.innerWidth <= 700 ? 1 : 3;
-    }
+        let currentProject = 0;
 
-    function updateCarousel() {
-        const projectsPerView = getProjectsPerView();
-        const maxProject =
-            projectCards.length - projectsPerView;
 
-        if (currentProject > maxProject) {
-            currentProject = maxProject;
+        function getProjectsPerView() {
+
+            return window.innerWidth <= 700 ? 1 : 3;
+
         }
 
-        if (currentProject < 0) {
-            currentProject = 0;
+
+        function getMaxProject() {
+
+            return Math.max(
+                0,
+                projectCards.length - getProjectsPerView()
+            );
+
         }
 
-        const cardWidth =
-            projectCards[0].offsetWidth;
 
-        const gap = 25;
+        function updateCarousel() {
 
-        projectsContainer.scrollTo({
-            left: currentProject * (cardWidth + gap),
-            behavior: "smooth"
-        });
+            const projectsPerView =
+                getProjectsPerView();
 
-        indicator.textContent =
-            `${String(currentProject + 1).padStart(2, "0")} / 04`;
-    }
+            const maxProject =
+                getMaxProject();
 
-    nextButton.addEventListener("click", () => {
-        currentProject++;
+
+            if (currentProject > maxProject) {
+                currentProject = maxProject;
+            }
+
+
+            if (currentProject < 0) {
+                currentProject = 0;
+            }
+
+
+            const cardWidth =
+                projectCards[0].offsetWidth;
+
+            const gap = 25;
+
+
+            projectsContainer.scrollTo({
+
+                left:
+                    currentProject *
+                    (cardWidth + gap),
+
+                behavior: "smooth"
+
+            });
+
+
+            if (projectsPerView === 1) {
+
+                indicator.textContent =
+                    `${String(currentProject + 1).padStart(2, "0")} / 04`;
+
+            } else {
+
+                indicator.textContent =
+                    currentProject === 0
+                        ? "01 - 03 / 04"
+                        : "02 - 04 / 04";
+
+            }
+
+
+            previousButton.disabled =
+                currentProject === 0;
+
+            nextButton.disabled =
+                currentProject === maxProject;
+
+        }
+
+
+        nextButton.addEventListener(
+            "click",
+            () => {
+
+                currentProject++;
+
+                updateCarousel();
+
+            }
+        );
+
+
+        previousButton.addEventListener(
+            "click",
+            () => {
+
+                currentProject--;
+
+                updateCarousel();
+
+            }
+        );
+
+
+        window.addEventListener(
+            "resize",
+            updateCarousel
+        );
+
+
         updateCarousel();
-    });
 
-    previousButton.addEventListener("click", () => {
-        currentProject--;
-        updateCarousel();
-    });
-
-    window.addEventListener("resize", updateCarousel);
-</script>
+    </script>
 
 </body>
+
 </html>

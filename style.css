@@ -11,12 +11,9 @@
 :root {
     --bg: #0d1117;
     --bg-secondary: #161b22;
-
     --text: #e6edf3;
     --text-muted: #8b949e;
-
     --border: #30363d;
-
     --green: #7ee787;
     --purple: #5a2f8a;
     --blue: #58a6ff;
@@ -39,14 +36,11 @@ body {
             transparent 30%
         ),
         var(--bg);
-
     color: var(--text);
-
     font-family:
         "Courier New",
         Courier,
         monospace;
-
     line-height: 1.6;
 }
 
@@ -84,16 +78,13 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     padding: 25px 0;
-
     border-bottom: 1px solid var(--border);
 }
 
 .logo {
     font-weight: bold;
     color: var(--text);
-
     transition:
         color 0.2s ease,
         text-shadow 0.2s ease;
@@ -106,9 +97,7 @@ nav {
 
 .logo:hover {
     color: var(--green);
-
     text-decoration: none;
-
     text-shadow:
         0 0 8px rgba(126, 231, 135, 0.35);
 }
@@ -120,7 +109,6 @@ nav {
 
 .nav-links a {
     color: var(--text-muted);
-
     transition:
         color 0.2s ease,
         text-shadow 0.2s ease;
@@ -128,9 +116,7 @@ nav {
 
 .nav-links a:hover {
     color: var(--blue);
-
     text-decoration: none;
-
     text-shadow:
         0 0 8px rgba(88, 166, 255, 0.35);
 }
@@ -147,9 +133,7 @@ nav {
 
 .terminal-line::after {
     content: "▋";
-
     margin-left: 6px;
-
     animation: blink 1s steps(1) infinite;
 }
 
@@ -166,61 +150,47 @@ nav {
 
 #hero {
     min-height: 75vh;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
-
     position: relative;
 }
 
 #hero::before {
     content: "";
-
     position: absolute;
-
     width: 450px;
     height: 450px;
-
     top: 50%;
     left: 35%;
-
     transform: translate(-50%, -50%);
-
     background:
         radial-gradient(
             circle,
             rgba(126, 231, 135, 0.07),
             transparent 65%
         );
-
     pointer-events: none;
-
     z-index: -1;
 }
 
 #hero h1 {
     font-size: clamp(3rem, 8vw, 6rem);
     line-height: 1;
-
     letter-spacing: -0.04em;
-
     text-shadow:
         0 0 30px rgba(126, 231, 135, 0.08);
 }
 
 #hero h2 {
     color: var(--purple);
-
     font-size: clamp(1.2rem, 3vw, 2rem);
-
     margin-top: 10px;
 }
 
 .intro {
     max-width: 600px;
     margin-top: 25px;
-
     color: #8b949e;
     font-size: 1.1rem;
 }
@@ -229,11 +199,8 @@ nav {
     display: flex;
     align-items: center;
     gap: 10px;
-
     margin-top: 25px;
-
     color: var(--green);
-
     font-size: 0.9rem;
     text-transform: uppercase;
     letter-spacing: 0.08em;
@@ -242,14 +209,10 @@ nav {
 .status-dot {
     width: 8px;
     height: 8px;
-
     border-radius: 50%;
-
     background: var(--green);
-
     box-shadow:
         0 0 8px rgba(126, 231, 135, 0.7);
-
     animation: statusPulse 2s ease-in-out infinite;
 }
 
@@ -269,21 +232,18 @@ nav {
 .hero-buttons {
     display: flex;
     gap: 15px;
-
     margin-top: 35px;
 }
 
 .hero-buttons a {
     border: 1px solid #30363d;
     padding: 10px 18px;
-
     transition: 0.2s ease;
 }
 
 .hero-buttons a:hover {
     border-color: #7ee787;
     color: #7ee787;
-
     text-decoration: none;
 }
 
@@ -358,7 +318,9 @@ section p {
 }
 
 
-/* CAROUSEL CONTROLS */
+/* ========================================
+   CAROUSEL CONTROLS
+   ======================================== */
 
 .carousel-controls {
     display: flex;
@@ -372,7 +334,10 @@ section p {
     border: 1px solid var(--border);
     background: var(--bg-secondary);
     color: var(--green);
-    font-family: "Courier New", Courier, monospace;
+    font-family:
+        "Courier New",
+        Courier,
+        monospace;
     font-size: 1.2rem;
     width: 42px;
     height: 42px;
@@ -380,20 +345,26 @@ section p {
     transition:
         border-color 0.2s ease,
         color 0.2s ease,
-        box-shadow 0.2s ease;
+        box-shadow 0.2s ease,
+        opacity 0.2s ease;
 }
 
-.carousel-button:hover {
+.carousel-button:hover:not(:disabled) {
     border-color: var(--green);
     color: var(--green);
     box-shadow:
         0 0 12px rgba(126, 231, 135, 0.12);
 }
 
+.carousel-button:disabled {
+    opacity: 0.25;
+    cursor: default;
+}
+
 .carousel-indicator {
     color: var(--text-muted);
     font-size: 0.9rem;
-    min-width: 55px;
+    min-width: 90px;
     text-align: center;
 }
 
@@ -404,10 +375,8 @@ section p {
 
 .skills-container {
     display: grid;
-
     grid-template-columns:
         repeat(auto-fit, minmax(250px, 1fr));
-
     gap: 30px;
 }
 
@@ -427,9 +396,7 @@ section p {
 .contact-links {
     display: flex;
     gap: 25px;
-
     margin-top: 25px;
-
     color: #7ee787;
 }
 
@@ -440,14 +407,10 @@ section p {
 
 footer {
     border-top: 1px solid #30363d;
-
     padding: 30px 0;
-
     display: flex;
     justify-content: space-between;
-
     color: #8b949e;
-
     font-size: 0.85rem;
 }
 
@@ -480,5 +443,4 @@ footer {
     .project-card {
         flex: 0 0 100%;
     }
-
 }
